@@ -46,6 +46,10 @@ client.on('message', message => {
        }
  
  if(tokens[0] === '/vote'){
+        let keywords = 'nothing';
+        if(tokens.length > 1){
+            keywords = tokens.slice(1,tokens.length).join(" ");
+        }
         message.react('👍');
         message.react('👎');
   
