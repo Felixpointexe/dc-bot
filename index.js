@@ -27,6 +27,13 @@ client.on('message', message => {
 
 
        }
+ if (message.content === '/help') {	
+
+
+       message.reply('ne du hs... ich sag es dir nicht');	   
+
+
+       }
 
 
   
