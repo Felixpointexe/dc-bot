@@ -63,10 +63,10 @@ client.on('message', message => {
         try {
             message.members.mentions.first().kick();
         } catch {
-            message.reply("I do not have permissions to kick " + msg.members.mentions.first());
+            message.reply("I do not have permissions to kick " + message.members.mentions.first());
         }
     } else {
-        message.reply("You do not have permissions to kick " + msg.members.mentions.first());
+        message.reply("You do not have permissions to kick " + message.members.mentions.first());
     }
  }
  
