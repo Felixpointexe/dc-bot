@@ -46,7 +46,9 @@ client.on('message', message => {
        }
  
  if(tokens[0] === '/vote'){
-        message.react('😄');
+        message.react('👍');
+        message.react('👎');
+  
  }
 
 
