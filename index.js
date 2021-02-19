@@ -23,7 +23,7 @@ client.on('message', message => {
     let tokens = message.content.split(" ");
 
     if(tokens[0] === 'ping') {
-        const r = Math.floor(Math.random() * replies.length);
+        
         message.reply('dein ping ist mir pong');
 
     }
