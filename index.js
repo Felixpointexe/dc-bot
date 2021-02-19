@@ -32,7 +32,7 @@ client.on('message', message => {
     if (message.content === 'hs') {	
 
 
-       message.reply('selber');	   
+       message.reply('was man sagt  is man selbst, wenn man nicht die klappe hält  😝');	   
 
 
        }
@@ -50,6 +50,8 @@ client.on('message', message => {
         if(tokens.length > 1){
             keywords = tokens.slice(1,tokens.length).join(" ");
         }
+  
+        const embed = new Discord.MessageEmbed()
   
        
         message.react('👍');
