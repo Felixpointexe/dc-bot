@@ -2,6 +2,15 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
+const fetch= require('node-fetch');
+
+const replies = [
+    'Pong Dong',
+    'Gesundheit!',
+    'ne da, da fehlen mir die Worte!'
+
+]
+
  
 
 client.on('ready', () => {
