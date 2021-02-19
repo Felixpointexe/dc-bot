@@ -14,7 +14,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    let tokens = msg.content.split(" ");
+    let tokens =  message.content.split(" ");
 
     if(tokens[0] === '/ping') {
         const r = Math.floor(Math.random() * replies.length);
