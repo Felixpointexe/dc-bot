@@ -50,6 +50,14 @@ client.on('message', message => {
         if(tokens.length > 1){
             keywords = tokens.slice(1,tokens.length).join(" ");
         }
+  
+        const embed = new Discord.MessageEmbed()
+      
+        .setTitle('vote for:')
+        .setColor(0x00ff00)
+        .setDescription(keywords);
+  
+  
         message.react('👍');
         message.react('👎');
   
