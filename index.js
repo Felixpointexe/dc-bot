@@ -23,7 +23,7 @@ client.on('message', message => {
     if (message.content === 'hs') {	
 
 
-       message.reply('selber');	    if(tokens[0] === '/gif'){
+       message.reply('selber');	   
 
 
        }
