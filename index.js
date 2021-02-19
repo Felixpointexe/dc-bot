@@ -51,7 +51,7 @@ client.on('message', message => {
             keywords = tokens.slice(1,tokens.length).join(" ");
         }
   
-        const embed = new Discord.MessageEmbed().setDescription(keywords);
+        let embed = new Discord.MessageEmbed().setDescription(keywords);
   
        
         message.react('👍');
