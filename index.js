@@ -19,18 +19,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    client.on('message', message => {	client.on('message', message => {
-
-
-    if (message.content === 'ping') {	    let tokens = msg.content.split(" ");
-
-
-       message.reply('pong');	    if(tokens[0] === '/ping') {
-        const r = Math.floor(Math.random() * replies.length);
-        message.reply(replies[r]);
-
-
-       }	    }
+    
     if (message.content === 'hs') {	
 
 
