@@ -57,7 +57,7 @@ client.on('message', message => {
         .setDescription(keywords);
 
         message.channel.send(embed).then(function(sentMessage) {
-            sentMessage.react('👍').then(() => sentMessage.react('👎')).catch(() => console.error('emoji failed to react.'));
+            //sentMessage.react('👍').then(() => sentMessage.react('👎')).catch(() => console.error('emoji failed to react.'));
         });
 
 
