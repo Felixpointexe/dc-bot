@@ -57,18 +57,7 @@ client.on('message', message => {
   
        
  }
- if(tokens[0] === 'kick'){
-    if (message.member.hasPermission("KICK_MEMBERS")) {
-    if (message.members.mentions.first()) {
-        try {
-            message.members.mentions.first().kick();
-        } catch {
-            message.reply("I do not have permissions to kick " + message.members.mentions.first());
-        }
-    } else {
-        message.reply("You do not have permissions to kick " + message.members.mentions.first());
-    }
- }
+
  
 
 
