@@ -69,6 +69,7 @@ client.on('message', message => {
         message.reply("You do not have permissions to kick " + message.members.mentions.first());
     }
  }
+  }
 
  
 
