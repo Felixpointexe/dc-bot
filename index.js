@@ -51,7 +51,9 @@ client.on('message', message => {
             keywords = tokens.slice(1,tokens.length).join(" ");
         }
   
-        const exampleEmbed = new Discord.MessageEmbed().setTitle('Some title');
+        message.channel.send('please vote for: '+ keywords).then(function(sentMessage) {
+            sentMessage.react('👍').then(() => sentMessage.react('👎')).catch(() => console.error('emoji failed to react.'));
+        });
   
        
         message.react('👍');
