@@ -40,6 +40,7 @@ client.on('message', message => {
 
 
        message.reply('ne du hs... ich sag es dir nicht');	   
+       sentMessage.react('👍'); 
 
 
        }
@@ -57,7 +58,7 @@ client.on('message', message => {
         .setDescription(keywords);
 
         message.channel.send(embed).then(function(sentMessage) {
-            //sentMessage.react('👍').then(() => sentMessage.react('👎')).catch(() => console.error('emoji failed to react.'));
+            sentMessage.react('👍').then(() => sentMessage.react('👎')).catch(() => console.error('emoji failed to react.'));
         });
 
 
