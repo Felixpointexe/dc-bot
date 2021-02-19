@@ -40,7 +40,7 @@ client.on('message', message => {
 
 
        message.reply('ne du hs... ich sag es dir nicht');	   
-       sentMessage.react('👍'); 
+       message.channel.send('👍'); 
 
 
        }
