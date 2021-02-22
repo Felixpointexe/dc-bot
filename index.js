@@ -154,9 +154,9 @@ async function gotMessage(message){
         
     }
     
-    if(msg.content.startsWith("/") ){
+    if(message.content.startsWith("/") ){
        
-       message.author.send('HI');
+       message.author.send(message.content);
        
        
        }
