@@ -158,7 +158,7 @@ async function gotMessage(message){
         
         let msg = message.content ;
        
-       message.author.send( ' is no valid command! If you want to create this command just contact @FeIjx#0260 😉');
+       message.author.send( msg + ' is no valid command! If you want to create this command just contact @FeIjx#0260 😉');
        
        
        }
