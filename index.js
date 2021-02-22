@@ -108,7 +108,7 @@ async function gotMessage(message){
     "author": {
       "name": "/help",
       "url": "https://discordapp.com",
-      "icon_url": "https://cdn.discordapp.com/avatars/811880872440627210/82d1dcce97dd2088bd041301e3d79b7c.png"
+      "icon_url": "https://cdn.discordapp.com/avatars/811880872440627210/b1971aa64c4a19c3edbdd5f3fdb93e4c.png"
     },
     "fields": [
       {
