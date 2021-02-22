@@ -87,11 +87,17 @@ async function gotMessage(message){
      }
     
     if(tokens[0] === '/help'){
+        
+        let keywords = 'nothing';
+        if(tokens.length > 1){
+            keywords = tokens.slice(1,tokens.length).join(" ");
+        }
     
-    message.channel.send({embed: {
-      color: 3447003,
-      description: "A very simple Embed!"
-    }});
+        message.channel.send({embed: {
+          title: "_please vote for:_",
+          color: 3447003,
+          description: keywords
+        }});
     }
 
 
