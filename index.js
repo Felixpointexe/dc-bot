@@ -97,7 +97,8 @@ async function gotMessage(message){
           title: "_please vote for:_",
           color: 3447003,
           description: keywords
-        }});
+        }}).then(function(sentMessage) {
+            sentMessage.react('👍').then(() => sentMessage.react('👎')).catch(() => console.error('emoji failed to react.'));
     }
 
 
