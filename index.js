@@ -152,7 +152,8 @@ async function gotMessage(message){
         if(tokens.length > 2){
             max = tokens[2];;
         }
-        let erg = Math.floor(Math.random(max-min))+min;
+        let erg = min;
+        erg = Math.floor(Math.random(max-min));
         if(max > min){ 
           message.channel.send(erg);
         }else{
