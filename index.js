@@ -7,6 +7,15 @@ const fetch= require('node-fetch');
 client.on('ready', () => {
 
     console.log('I am ready!');
+    
+    bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'with depression',
+            type: "PLAYING",
+            url: "Made by @FeIjx#0260"
+        }
+    });
 
 });
 
