@@ -7,6 +7,7 @@ const fetch= require('node-fetch');
 client.on('ready', () => {
 
     console.log('I am ready!');
+    console.log(`Logged in as ${client.user.tag}!`);
     /*
      bot.user.setStatus('available')
      bot.user.setPresence({
