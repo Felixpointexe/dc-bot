@@ -9,14 +9,8 @@ client.on('ready', () => {
     console.log('I am ready!');
     console.log(`Logged in as ${client.user.tag}!`);
     
-     client.user.setPresence({
-        status: "online",  // You can show online, idle... Do not disturb is dnd
-        activity: {
-            name: 'with ducks',
-            type: 'PLAYING',
-            url: 'https://discord.com'
-        }
-    });
+     client.user.setActivity(`Use f!help.`, {type: "playing"}); 
+     });
     
 
 });
