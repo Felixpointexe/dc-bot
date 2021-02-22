@@ -7,7 +7,7 @@ const fetch= require('node-fetch');
 client.on('ready', () => {
 
     console.log('I am ready!');
-    
+    /*
      bot.user.setStatus('available')
      bot.user.setPresence({
         game: {
@@ -16,6 +16,7 @@ client.on('ready', () => {
             url: "https://www.twitch.tv/monstercat"
         }
     });
+    */
 
 });
 
