@@ -76,19 +76,8 @@ async function gotMessage(message){
     }
     
     if(tokens[0] === '/vote'){
-        let keywords = 'nothing';
-        if(tokens.length > 1){
-            keywords = tokens.slice(1,tokens.length).join(" ");
-        }
-  
-        message.channel.send('_please vote for:_ **'+ keywords+'**').then(function(sentMessage) {
-            sentMessage.react('👍').then(() => sentMessage.react('👎')).catch(() => console.error('emoji failed to react.'));
-        });  
-     }
-    
-    if(tokens[0] === '/help'){
         
-        let keywords = 'nothing';
+        let keywords = '[nothing]';
         if(tokens.length > 1){
             keywords = tokens.slice(1,tokens.length).join(" ");
         }
