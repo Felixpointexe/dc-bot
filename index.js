@@ -65,11 +65,15 @@ async function gotMessage(message){
     }
     
     if(tokens[0] === '/spam'){
-        
         for ( x = 0; x < 30 ; x++){
        message.author.send("SPAM")
-        }
-        
+        }  
+    }
+    
+    if(tokens[0] === '/invite'){
+      
+       message.author.send("click here to invite me to your server: https://discord.com/oauth2/authorize?client_id=811880872440627210&scope=bot")
+       
     }
 
 
