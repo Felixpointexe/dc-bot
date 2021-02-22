@@ -9,7 +9,13 @@ client.on('ready', () => {
     console.log('I am ready!');
     console.log(`Logged in as ${client.user.tag}!`);
     
-     client.user.setActivity(`Use f!help.`, {type: "playing"}); 
+    client.user.setPresence({
+        game: {
+            name: 'Use f!help',
+            type: "Playing",
+            url: "https://discordapp.com/"
+        }
+    });
      
 
 });
