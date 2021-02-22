@@ -8,8 +8,8 @@ client.on('ready', () => {
 
     console.log('I am ready!');
     
-     index.user.setStatus('available')
-     index.user.setPresence({
+     bot.user.setStatus('available')
+     bot.user.setPresence({
         game: {
             name: 'with depression',
             type: "STREAMING",
