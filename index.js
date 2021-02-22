@@ -49,19 +49,7 @@ async function gotMessage(message){
        message.channel.send(json.results[0].url);
      }
     
-    if(tokens[0] === '/yt'){
-         
-        let keywords = '10hours black screen';
-        if(tokens.length > 1){
-            keywords = tokens.slice(1,tokens.length).join(" ");
-        }
-         
-        let url = `https://www.youtube.com/results?search_query=${keywords}`;
-        let response = await fetch(url);
-        let json = await response.json();
-       
-       message.channel.send(json.results[0].url);
-     }
+    
     
     
     if(tokens[0] === '/update'){
