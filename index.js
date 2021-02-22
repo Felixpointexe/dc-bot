@@ -8,12 +8,12 @@ client.on('ready', () => {
 
     console.log('I am ready!');
     
-    bot.user.setStatus('available')
-    bot.user.setPresence({
+     index.user.setStatus('available')
+     index.user.setPresence({
         game: {
             name: 'with depression',
             type: "STREAMING",
-            url: "Made by FeIjx#0260"
+            url: "https://www.twitch.tv/monstercat"
         }
     });
 
