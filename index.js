@@ -90,6 +90,53 @@ async function gotMessage(message){
             sentMessage.react('👍').then(() => sentMessage.react('👎')).catch(() => console.error('emoji failed to react.'));
         });  
     }
+    
+    
+    if(tokens[0] === '/help'){
+        message.channel.send({embed: {
+          "url": "https://discordapp.com",
+    "color": 3429488,
+    
+    "footer": {
+      "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
+      "text": "@FeIjx#0260"
+    },
+    "thumbnail": {
+      "url": "https://cdn.discordapp.com/avatars/811880872440627210/82d1dcce97dd2088bd041301e3d79b7c.png"
+    },
+    
+    "author": {
+      "name": "/help",
+      "url": "https://discordapp.com",
+      "icon_url": "https://cdn.discordapp.com/avatars/811880872440627210/82d1dcce97dd2088bd041301e3d79b7c.png"
+    },
+    "fields": [
+      {
+        "name": "ping",
+        "value": "pong"
+      },
+      {
+        "name": "/gif [search]",
+        "value": "sends a gif"
+      },
+      {
+        "name": "/vote [topic]",
+        "value": "makes it possible to vote in discord"
+      },
+      {
+        "name": "/spam",
+        "value": "try it out 😜"
+        
+      },
+      {
+        "name": "/invite",
+        "value": "if you want this bot on your own server" 
+      }
+    ]
+        }});
+        
+    }
+    
 
 
 
