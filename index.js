@@ -61,6 +61,11 @@ async function gotMessage(message){
     });
         
     }
+    
+    if(tokens[0] === '/spam'){
+       message.author.send("SPAM")
+        
+    }
 
 
 
