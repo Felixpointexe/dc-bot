@@ -143,6 +143,20 @@ async function gotMessage(message){
        message.reply('🖕 selber!');
     }
     
+    if(tokens[0] === '/rdm'){
+        let min = 0; 
+        let max = 1;
+        if(tokens.length > 1){
+            min = tokens[1];;
+        }
+        if(tokens.length > 2){
+            max = tokens[2];;
+        }
+        
+        message.channel.send(Math.floor(Math.random(min,max+1)));
+        
+    }
+    
 
 
 
