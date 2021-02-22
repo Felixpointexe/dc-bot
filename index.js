@@ -10,10 +10,11 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     
      client.user.setPresence({
-        status: "idle",  // You can show online, idle... Do not disturb is dnd
+        status: "online",  // You can show online, idle... Do not disturb is dnd
         activity: {
-            name: "/gif",  // The message shown
-            type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
+            name: 'with ducks',
+            type: 'PLAYING',
+            url: 'https://discord.com'
         }
     });
     
