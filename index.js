@@ -10,6 +10,7 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     
     client.user.setPresence({
+        status: "online",
         game: {
             name: 'Use /help',
             type: "Playing",
@@ -52,17 +53,7 @@ async function gotMessage(message){
     
     
     
-    if(tokens[0] === '/update'){
-       message.reply('status should now be updated');
-     client.user.setPresence({
-        status: "idle",  // You can show online, idle... Do not disturb is dnd
-        activity: {
-            name: "/gif",  // The message shown
-            type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
-        }
-    });
-        
-    }
+    
     
     if(tokens[0] === '/spam'){
         for ( x = 0; x < 30 ; x++){
