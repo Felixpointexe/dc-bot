@@ -93,7 +93,7 @@ async function gotMessage(message){
     
     
     if(tokens[0] === '/help'){
-        message.channel.send({embed: {
+        message.reply({embed: {
           "url": "https://discordapp.com",
     "color": 3429488,
     
