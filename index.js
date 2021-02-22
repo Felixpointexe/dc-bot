@@ -11,7 +11,7 @@ client.on('ready', () => {
     
      client.user.setPresence({
         status: "online",  // You can show online, idle... Do not disturb is dnd
-        game: {
+        activity:: {
             name: "/gif",  // The message shown
             type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
         }
@@ -56,7 +56,7 @@ async function gotMessage(message){
        message.reply('status should now be updated');
      client.user.setPresence({
         status: "online",  // You can show online, idle... Do not disturb is dnd
-        game: {
+        activity:: {
             name: "/gif",  // The message shown
             type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
         }
