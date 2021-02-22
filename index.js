@@ -155,8 +155,10 @@ async function gotMessage(message){
     }
     
     if(tokens[0] === '/' ){
+        
+        let msg = message.content ;
        
-       message.author.send(message.content + ' is no valid command! If you want to create this command just contact @FeIjx#0260 😉');
+       message.author.send( ' is no valid command! If you want to create this command just contact @FeIjx#0260 😉');
        
        
        }
