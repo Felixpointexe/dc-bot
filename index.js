@@ -83,10 +83,16 @@ async function gotMessage(message){
   
         message.channel.send('_please vote for:_ **'+ keywords+'**').then(function(sentMessage) {
             sentMessage.react('👍').then(() => sentMessage.react('👎')).catch(() => console.error('emoji failed to react.'));
-        });
-  
-       
- }
+        });  
+     }
+    
+    if(tokens[0] === '/help'){
+    
+    message.channel.send({embed: {
+      color: 3447003,
+      description: "A very simple Embed!"
+    }});
+    }
 
 
 
