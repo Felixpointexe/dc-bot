@@ -8,16 +8,15 @@ client.on('ready', () => {
 
     console.log('I am ready!');
     console.log(`Logged in as ${client.user.tag}!`);
-    /*
-     bot.user.setStatus('available')
-     bot.user.setPresence({
+    
+     client.user.setPresence({
+        status: "online",  // You can show online, idle... Do not disturb is dnd
         game: {
-            name: 'with depression',
-            type: "STREAMING",
-            url: "https://www.twitch.tv/monstercat"
+            name: "/gif",  // The message shown
+            type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
         }
     });
-    */
+    
 
 });
 
@@ -43,12 +42,6 @@ async function gotMessage(message){
             keywords = tokens.slice(1,tokens.length).join(" ");
         }
          
-         if ( keywords === 'felix' || keywords === 'Felix'){
-             keywords = felixisboss;
-         }
-      
-        
-      
         let url = `https://g.tenor.com/v1/search?q=${keywords}&key=1O4OB5Z2JAMM&limit=8`;
         let response = await fetch(url);
         let json = await response.json();
