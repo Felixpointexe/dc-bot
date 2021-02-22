@@ -47,8 +47,20 @@ async function gotMessage(message){
         let json = await response.json();
        
        message.channel.send(json.results[0].url);
-  
- }
+     }
+    
+    
+    if(tokens[0] === '/update'){
+       message.reply('status should now be updated');
+     client.user.setPresence({
+        status: "online",  // You can show online, idle... Do not disturb is dnd
+        game: {
+            name: "/gif",  // The message shown
+            type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
+        }
+    });
+        
+    }
 
 
 
