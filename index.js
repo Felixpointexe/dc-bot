@@ -55,7 +55,7 @@ async function gotMessage(message){
     if(tokens[0] === '/update'){
        message.reply('status should now be updated');
      client.user.setPresence({
-        status: "online",  // You can show online, idle... Do not disturb is dnd
+        status: "idle",  // You can show online, idle... Do not disturb is dnd
         activity: {
             name: "/gif",  // The message shown
             type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
