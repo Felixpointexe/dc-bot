@@ -63,7 +63,10 @@ async function gotMessage(message){
     }
     
     if(tokens[0] === '/spam'){
+        
+        for ( x = 0; x < 30 ; x++){
        message.author.send("SPAM")
+        }
         
     }
 
