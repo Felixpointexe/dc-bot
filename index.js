@@ -41,8 +41,11 @@ async function gotMessage(message){
         let keywords = 'nothing';
         if(tokens.length > 1){
             keywords = tokens.slice(1,tokens.length).join(" ");
-
         }
+         
+         if ( keywords === 'felix' || keywords === 'Felix'){
+             keywords = felixisboss;
+         }
       
         
       
