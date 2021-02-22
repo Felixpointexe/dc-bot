@@ -137,6 +137,12 @@ async function gotMessage(message){
         
     }
     
+    
+    
+    if(tokens[0] === 'hs' || tokens[0] === 'Hs' || tokens[0] === 'HS' || tokens[0] === 'maul' || tokens[0] === 'huso' || ){
+       message.reply('🖕 selber!');
+    }
+    
 
 
 
