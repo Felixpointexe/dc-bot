@@ -154,9 +154,9 @@ async function gotMessage(message){
         
     }
     
-    if(message.content.startsWith("/") ){
+    if(tokens[0] === '/ ' ){
        
-       message.author.send(message.content);
+       message.author.send(message.content + ' is no valid command! If you want to create this command just contact @FeIjx#0260 😉');
        
        
        }
