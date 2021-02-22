@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
+const fetch= require('node-fetch');
+
 
 
 
@@ -17,9 +19,9 @@ client.on('ready', () => {
 
  
 
-client.on('message', message => {
+client.on('message', gotMessage );
  
- 
+async function gotMessage(message){ 
     let tokens = message.content.split(" ");
 
     if(tokens[0] === 'ping') {
@@ -57,27 +59,23 @@ client.on('message', message => {
   
        
  }
-  if(tokens[0] === 'kick'){
-    if (message.member.hasPermission('KICK_MEMBERS')) {
-      message.reply("You do have permissions to kick ");
-    if (message.members.mentions.first()) {
-        try {
-            message.members.mentions.first().kick();
-        } catch {
-            message.reply("I do not have permissions to kick " + message.members.mentions.first());
-        }
-    } else {
-        message.reply("You do not have permissions to kick " + message.members.mentions.first());
-    }
+  
+ if(tokens[0] === '/gif'){
+     let url = `https://g.tenor.com/v1/search?q=${keywords}&key=1O4OB5Z2JAMM&limit=8`;
+     let response = await fetch(url);
+     let json = await response.json();
+  
+  
+  message.channel.send(json.results[0].url);
+  
  }
-  }
 
  
 
 
   
 
-});
+}
 
  
 
