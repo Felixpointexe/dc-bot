@@ -12,8 +12,8 @@ client.on('ready', () => {
     bot.user.setPresence({
         game: {
             name: 'with depression',
-            type: "PLAYING",
-            url: "Made by @FeIjx#0260"
+            type: "STREAMING",
+            url: "Made by FeIjx#0260"
         }
     });
 
