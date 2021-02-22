@@ -71,10 +71,21 @@ async function gotMessage(message){
     }
     
     if(tokens[0] === '/invite'){
-      
-       message.author.send("click here to invite me to your server: https://discord.com/oauth2/authorize?client_id=811880872440627210&scope=bot")
-       
+       message.author.send("click here to invite me to your server: https://discord.com/oauth2/authorize?client_id=811880872440627210&scope=bot") 
     }
+    
+    if(tokens[0] === '/vote'){
+        let keywords = 'nothing';
+        if(tokens.length > 1){
+            keywords = tokens.slice(1,tokens.length).join(" ");
+        }
+  
+        message.channel.send('_please vote for:_ **'+ keywords+'**').then(function(sentMessage) {
+            sentMessage.react('👍').then(() => sentMessage.react('👎')).catch(() => console.error('emoji failed to react.'));
+        });
+  
+       
+ }
 
 
 
