@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const fetch= require('node-fetch');
+//const fetch= require('node-fetch');
 
 
 
@@ -62,11 +62,10 @@ async function gotMessage(message){
   
  if(tokens[0] === '/gif'){
      let url = `https://g.tenor.com/v1/search?q=starwars&key=1O4OB5Z2JAMM&limit=8`;
-     let response = await fetch(url);
-     let json = await response.json();
+     
   
   
-  message.channel.send(json.results[0].url);
+  message.channel.send(url);
   
  }
 
