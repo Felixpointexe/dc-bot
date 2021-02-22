@@ -71,7 +71,8 @@ async function gotMessage(message){
     }
     
     if(tokens[0] === '/invite'){
-       message.author.send("click here to invite me to your server: https://discord.com/oauth2/authorize?client_id=811880872440627210&scope=bot") 
+       message.author.send("click here to invite me to your server: https://discord.com/oauth2/authorize?client_id=811880872440627210&scope=bot");
+        message.react('📩');
     }
     
     if(tokens[0] === '/vote'){
