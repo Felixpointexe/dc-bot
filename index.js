@@ -146,11 +146,10 @@ async function gotMessage(message){
         
         
         let erg = Math.floor(Math.random(max));
-        if(max > min){ 
+        
           message.channel.send(erg);
-        }else{
-           message.reply('/rdm [min] [max] : [max] has to be > then [min] !');
-        }
+        
+           
         
     }
     
