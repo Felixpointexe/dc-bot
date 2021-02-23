@@ -101,7 +101,7 @@ async function gotMessage(message){
     
     "footer": {
       "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
-      "text": "@FeIjx#0260"
+      "text": "Bot made by @FeIjx#0260"
     },
     "thumbnail": {
       "url": "https://upload.wikimedia.org/wikipedia/en/3/39/R2-D2_Droid.png"
