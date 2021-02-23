@@ -97,7 +97,7 @@ async function gotMessage(message){
     if(tokens[0] === '/help'){
         message.reply({embed: {
           "url": "https://discordapp.com",
-    "color": 009900,
+    "color": 3dd2f2,
     
     "footer": {
       "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
