@@ -140,12 +140,14 @@ async function gotMessage(message){
     }
     
     if(tokens[0] === '/rdm'){
+        
+        
        
-        let max = 1;
-        max = tokens[1];;
+       
+        let max = tokens[1];
         
         
-        let erg = Math.random(max);
+        let erg = Math.random() * max;
         
           message.channel.send(erg);
         
