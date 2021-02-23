@@ -181,8 +181,34 @@ async function gotMessage(message){
        
        }
     
+    if(tokens[0] === '/orakel' ){
+        let keywords = '[nothing]';
+        if(tokens.length > 1){
+            keywords = tokens.slice(1,tokens.length).join(" ");
+        }
+        
+        const answers = [
+              'Ja',
+              'Nein',
+              'Möglich ist es',
+              'vielleicht',
+              'kann sein',
+              'ich schließe mich deiner meinung an',
+              'jain'
+              ]
+        const r = Math.floor(Math.random() * replies.length);
+        
+        message.channel.send({embed: {
+          title: keywords,
+          color: 3447003,
+          description: replies[r]
+        }});
+        
+    }
+    
 
 //Lucas war hier123
+    // ok
 
 }
 
