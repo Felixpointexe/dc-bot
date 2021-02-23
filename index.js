@@ -27,6 +27,10 @@ client.on('message', gotMessage );
  
 async function gotMessage(message){ 
     let tokens = message.content.split(" ");
+    
+    if(message.channel.id != '813345162410459146'){
+        return;
+    }
 
     if(tokens[0] === 'ping') {
         
