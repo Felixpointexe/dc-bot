@@ -201,7 +201,7 @@ async function gotMessage(message){
         message.channel.send({embed: {
           title: keywords,
           color: 3447003,
-          description: replies[r]
+          description: answers[r]
         }});
         
     }
