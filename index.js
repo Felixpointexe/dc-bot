@@ -148,7 +148,7 @@ async function gotMessage(message){
         
        
        
-        let max = tokens[1];
+        let min = tokens[1];
         let max = tokens[2];
         
         
