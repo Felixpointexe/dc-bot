@@ -127,7 +127,7 @@ async function gotMessage(message){
       {
         "name": "/invite",
         "value": "if you want this bot on your own server" 
-      }
+      },
       {
         "name": "/rdm [max]",
         "value": "outputs a random number between 0 and [max]" 
