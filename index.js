@@ -129,8 +129,8 @@ async function gotMessage(message){
         "value": "if you want this bot on your own server" 
       },
       {
-        "name": "/rdm [max]",
-        "value": "outputs a random number between 0 and [max]" 
+        "name": "/rdm [min] [max]",
+        "value": "outputs a random number between [min] and [max]" 
       }
     ]
         }});
