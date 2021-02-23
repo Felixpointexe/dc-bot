@@ -57,7 +57,7 @@ async function gotMessage(message){
              keywords = 'total looser';
          }
          
-         if(keywords === 'felix'){
+         if(keywords === 'felix' || keywords === 'Felix'){
              keywords = 'like a boss';
          }
          
@@ -65,7 +65,7 @@ async function gotMessage(message){
              keywords = 'brawl stars';
          }
          
-         if(keywords === 'lucas'){
+         if(keywords === 'lucas' || keywords === 'Lucas'){
              keywords = 'Lucas Moura'
          }
          
