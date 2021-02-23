@@ -54,7 +54,7 @@ async function gotMessage(message){
         }
          
          if(keywords === 'adrian'){
-             hkeywords = 'total looser';
+             keywords = 'total looser';
          }
          
         let url = `https://g.tenor.com/v1/search?q=${keywords}&key=1O4OB5Z2JAMM&limit=8`;
