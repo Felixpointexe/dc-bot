@@ -151,7 +151,7 @@ async function gotMessage(message){
         let min = tokens[1];
         let max = tokens[2];
         
-        let erg = min;
+        let erg = parseInt(min);
          erg  += Math.round(Math.random() * (max-min));
         
           message.channel.send(erg);
