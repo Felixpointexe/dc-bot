@@ -146,6 +146,12 @@ async function gotMessage(message){
     if(tokens[0] === '/rdm'){
         
         
+        if( tokens.length < 3){
+            message.reply('/rdm needs parameters [min] [max]');
+            return;
+        }
+        
+        
        
        
         let min = tokens[1];
