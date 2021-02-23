@@ -196,7 +196,7 @@ async function gotMessage(message){
               'ich schließe mich deiner meinung an',
               'jain'
               ]
-        const r = Math.floor(Math.random() * replies.length);
+        const r = Math.floor(Math.random() * answers.length);
         
         message.channel.send({embed: {
           title: keywords,
