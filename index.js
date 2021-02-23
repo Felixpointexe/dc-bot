@@ -37,6 +37,12 @@ async function gotMessage(message){
         message.reply('pong');
 
     }
+    
+    if(tokens[0] === 'Sniper') {
+        
+        message.reply('Max one trick');
+
+    }
 
     
    
