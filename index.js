@@ -98,13 +98,13 @@ async function gotMessage(message){
       "text": "@FeIjx#0260"
     },
     "thumbnail": {
-      "url": "https://cdn.discordapp.com/avatars/811880872440627210/b1971aa64c4a19c3edbdd5f3fdb93e4c.png"
+      "url": "https://cdn.discordapp.com/avatars/811880872440627210/bda49f3ef3d580040b88a44e6e6aeee7.png"
     },
     
     "author": {
       "name": "/help",
       "url": "https://discordapp.com",
-      "icon_url": "https://cdn.discordapp.com/avatars/811880872440627210/b1971aa64c4a19c3edbdd5f3fdb93e4c.png"
+      "icon_url": "https://cdn.discordapp.com/avatars/811880872440627210/bda49f3ef3d580040b88a44e6e6aeee7.png"
     },
     "fields": [
       {
