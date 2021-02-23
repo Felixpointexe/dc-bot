@@ -137,6 +137,10 @@ async function gotMessage(message){
       {
         "name": "/rdm [min] [max]",
         "value": "outputs a random number between [min] and [max]" 
+      },
+      {
+        "name": "/orakel [question]",
+        "value": "answers every Yes/No question" 
       }
     ]
         }});
