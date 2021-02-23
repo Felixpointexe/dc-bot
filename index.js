@@ -13,7 +13,7 @@ client.on('ready', () => {
         status: "online",
         game: {
             name: 'Use /help',
-            type: "PLAYING",
+            type: "WATCHING",
             url: "https://github.com/Felixpointexe"
         }
     });
