@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fetch= require('node-fetch');
-const mongoose = require('mongoose');
+
 
 
 client.on('ready', () => {
@@ -231,9 +231,9 @@ async function gotMessage(message){
     
     
     if(tokens[0] === '/hi' ){
-        message.reply('Invalid command')
+        message.reply('Hallo')
        .then(msg => {
-        msg.delete(10000)
+        msg.delete(1000)
     })
     }
     
