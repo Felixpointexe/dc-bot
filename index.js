@@ -14,6 +14,7 @@ client.on('ready', () => {
     const data = JSON.parse(fs.readFileSync('data.json').toString());
     data.push(4);
     fs.writeFileSync('data.json',JSON.stringify(data));
+    console.log(JSON.parse(fs.readFileSync('data.json').toString()));
     
     client.user.setPresence({
         status: "online",
