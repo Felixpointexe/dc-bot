@@ -229,6 +229,14 @@ async function gotMessage(message){
         
     }
     
+    
+    if(tokens[0] === '/hi' ){
+        message.reply('Invalid command')
+       .then(msg => {
+        msg.delete(10000)
+    })
+    }
+    
 
 //Lucas war hier123
     // ok
