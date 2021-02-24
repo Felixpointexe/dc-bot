@@ -162,7 +162,7 @@ async function gotMessage(message){
         "value": "outputs a random number between [min] and [max]" 
       },
       {
-        "name": "/orakel [question]",
+        "name": "/orakel [question]  or /orakel info",
         "value": "answers every Yes/No question" 
       }
     ]
