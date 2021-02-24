@@ -1,10 +1,8 @@
 const Discord = require('discord.js');
-
 const client = new Discord.Client();
-
 const fetch= require('node-fetch');
+const mongoose = require('mongoose');
 
-const fs = require('fs');
 
 client.on('ready', () => {
 
@@ -210,6 +208,11 @@ async function gotMessage(message){
         let keywords = '[nothing]';
         if(tokens.length > 1){
             keywords = tokens.slice(1,tokens.length).join(" ");
+        }
+        
+        if(keywords === 'info'){
+            message.reply('ask the oracle the same question only once, otherwise it can lie');
+            return;
         }
         
         const answers = [
