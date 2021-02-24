@@ -231,6 +231,7 @@ async function gotMessage(message){
     
     
     if(tokens[0] === '/hi' ){
+        message.delete(500);
         message.reply('Hallo')
        .then(msg => {
         msg.delete(1000)
