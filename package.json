@@ -20,6 +20,8 @@
     "request": "2.81.0",
     
     "node-fetch": "^2.6.1"
+    
+    "mongoose": "^5.11.18"
 
   }
 
