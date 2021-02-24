@@ -70,6 +70,10 @@ async function gotMessage(message){
              keywords = 'Lucas Moura'
          }
          
+         if(keywords === 'philipp' || keywords === 'Philipp'){
+            keywords = 'Numa Numa Fortnite GIF'
+         }
+         
          
          
         let url = `https://g.tenor.com/v1/search?q=${keywords}&key=1O4OB5Z2JAMM&limit=8`;
