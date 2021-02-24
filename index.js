@@ -4,10 +4,13 @@ const client = new Discord.Client();
 
 const fetch= require('node-fetch');
 
+const fs = require('fs');
+
 client.on('ready', () => {
 
     console.log('I am ready!');
     console.log(`Logged in as ${client.user.tag}!`);
+    console.log(fs.readFileSync('data.json'));
     
     client.user.setPresence({
         status: "online",
