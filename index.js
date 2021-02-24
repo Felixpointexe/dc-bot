@@ -10,12 +10,7 @@ client.on('ready', () => {
 
     console.log('I am ready!');
     console.log(`Logged in as ${client.user.tag}!`);
-    console.log(JSON.parse(fs.readFileSync('data.json').toString()));
-    const data = JSON.parse(fs.readFileSync('data.json').toString());
-    data.pop();
-    data[0] = 5;
-    fs.writeFileSync('data.json',JSON.stringify(data));
-    console.log(JSON.parse(fs.readFileSync('data.json').toString()));
+    
     
     client.user.setPresence({
         status: "online",
