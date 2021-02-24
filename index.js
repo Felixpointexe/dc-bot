@@ -13,7 +13,7 @@ client.on('ready', () => {
     console.log(JSON.parse(fs.readFileSync('data.json').toString()));
     const data = JSON.parse(fs.readFileSync('data.json').toString());
     data.pop();
-    data = '5';
+    data = ['5'];
     fs.writeFileSync('data.json',JSON.stringify(data));
     console.log(JSON.parse(fs.readFileSync('data.json').toString()));
     
