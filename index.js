@@ -211,12 +211,7 @@ async function gotMessage(message){
         
         const answers = [
               'Ja',
-              'Nein',
-              'Möglich ist es',
-              'vielleicht',
-              'kann sein',
-              'ich schließe mich deiner meinung an',
-              'jain'
+              'Nein'
               ]
         const r = Math.floor(Math.random() * answers.length);
         
