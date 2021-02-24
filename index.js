@@ -12,8 +12,8 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     console.log(JSON.parse(fs.readFileSync('data.json').toString()));
     const data = JSON.parse(fs.readFileSync('data.json').toString());
-    data.push(4);
-    data = '5';
+    data.pop();
+    //data = '5';
     fs.writeFileSync('data.json',JSON.stringify(data));
     console.log(JSON.parse(fs.readFileSync('data.json').toString()));
     
