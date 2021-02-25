@@ -29,7 +29,7 @@ client.on('message', gotMessage );
 async function gotMessage(message){ 
     let tokens = message.content.split(" ");
     
-    if(message.channel.id != '813345162410459146' && message.channel.id != '812003291436154942'){
+    if(message.channel.id != '813345162410459146' && message.channel.id != '812003291436154942' && message.channel.id !=  '814503926379446336'){
         return;
     }
 
