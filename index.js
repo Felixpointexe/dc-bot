@@ -236,6 +236,11 @@ async function gotMessage(message){
         
     }
     
+    if(tokens[0] === '/bastard'){
+    
+        
+    }
+    
     
     if(tokens[0] === '/hi' ){
         //message.delete(500);                                 //no permission 😥
