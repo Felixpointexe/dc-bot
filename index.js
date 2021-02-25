@@ -237,7 +237,7 @@ async function gotMessage(message){
     }
     
     if(tokens[0] === '/bastard'){
-    {
+    
   
        message.channel.send({embed: {
           "title": "Der Bastard-award",
