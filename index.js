@@ -278,8 +278,9 @@ async function gotMessage(message){
     }
     
 
-//Lucas war hier123
+     //Lucas war hier123
     // okdfgsdf<xYYX
+     //hallo hier ist kein easter egg
 
 }
 
