@@ -76,7 +76,7 @@ async function gotMessage(message){
          
          
          if(keywords === 'anton' || keywords === 'Anton'){
-            keywords = 'anton google'   //gibt kein gutes gif
+            keywords = 'i am the senat'   //gibt kein gutes gif
          }
          
         let url = `https://g.tenor.com/v1/search?q=${keywords}&key=1O4OB5Z2JAMM&limit=8`;
