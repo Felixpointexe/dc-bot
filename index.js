@@ -247,7 +247,7 @@ async function gotMessage(message){
         
         if(tokens.length > 1){
             let name2 = tokens[1];
-            text = name + " findet, dass " + name2 + " ein Bastard ist. \n Was denkt dir darüber? Stimmt doch mal ab"    
+            text = name + " findet, dass " + name2 + " ein Bastard ist. \n Was denkt ihr darüber? Stimmt doch mal ab"    
         }
        
        message.channel.send({embed: {
