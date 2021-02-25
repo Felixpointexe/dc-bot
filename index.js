@@ -256,7 +256,9 @@ async function gotMessage(message){
            }
 
            
-        }});
+        }}).then(function(sentMessage) {
+            sentMessage.react('👍').then(() => sentMessage.react('👎')).catch(() => console.error('emoji failed to react.'));
+        }); 
         
 
     }
