@@ -237,11 +237,13 @@ async function gotMessage(message){
     }
     
     if(tokens[0] === '/bastard'){
+        
+        let name = message.author.username;
     
   
        message.channel.send({embed: {
           "title": "Der Bastard-award",
-          "description": "findet, dass  ein Bastard ist. \n Was denkt dir darüber? ${message.author.username} Stimmt doch mal ab",
+          "description": name, //"findet, dass  ein Bastard ist. \n Was denkt dir darüber? ${message.author.username} Stimmt doch mal ab",
           "color": 13632027,
           "timestamp": "2021-02-25T12:22:15.923Z",
           "image": {
