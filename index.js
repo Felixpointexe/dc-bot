@@ -238,12 +238,17 @@ async function gotMessage(message){
     
     if(tokens[0] === '/bastard'){
         
-        let name = message.author.username;
-    
-  
+        let name = message.author.username;        
+        let text = name + " findet, dass er selbst ein Bastard ist. \n Was denkt ihr darüber? Stimmt doch mal ab" ;
+        
+        if(tokens.length > 1){
+            let name2 = tokens[1];
+            text = name + " findet, dass " + name2 + " ein Bastard ist. \n Was denkt dir darüber? Stimmt doch mal ab"    
+        }
+       
        message.channel.send({embed: {
           "title": "Der Bastard-award",
-          "description": name + "findet, dass  ein Bastard ist. \n Was denkt dir darüber? Stimmt doch mal ab",
+          "description": text,
           "color": 13632027,
           "timestamp": "2021-02-25T12:22:15.923Z",
           "image": {
@@ -253,6 +258,7 @@ async function gotMessage(message){
            
         }});
         
+
     }
     
     
