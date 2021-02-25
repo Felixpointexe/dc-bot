@@ -250,7 +250,6 @@ async function gotMessage(message){
           "title": "Der Bastard-award",
           "description": text,
           "color": 13632027,
-          "timestamp": "2021-02-25T12:22:15.923Z",
           "image": {
              "url": "https://assets.stickpng.com/images/580b585b2edbce24c47b2af7.png"
            }
