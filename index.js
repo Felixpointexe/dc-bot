@@ -246,12 +246,9 @@ async function gotMessage(message){
           "timestamp": "2021-02-25T12:22:15.923Z",
           "image": {
              "url": "https://assets.stickpng.com/images/580b585b2edbce24c47b2af7.png"
-           },
-           "author": {
-              "name": "author name",
-              "url": "https://discordapp.com",
-              "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png"
            }
+
+           
         }});
         
     }
