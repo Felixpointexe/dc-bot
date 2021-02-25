@@ -167,7 +167,11 @@ async function gotMessage(message){
       {
         "name": "/orakel [question]  or /orakel info",
         "value": "answers every Yes/No question" 
-      }
+      },
+      {
+        "name": "/bastard [@username]",
+        "value": "Bastard-award -> survey" 
+      }  
     ]
         }});
         
