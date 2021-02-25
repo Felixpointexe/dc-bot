@@ -243,7 +243,7 @@ async function gotMessage(message){
     if(tokens[0] === '/bastard'){
         
         let name = message.author.username;        
-        let text = name + " findet, dass er selbst ein Bastard ist. \n Was denkt ihr darüber? Stimmt doch mal ab" ;
+        let text = name + " sssssfindet, dass er selbst ein Bastard ist. \n Was denkt ihr darüber? Stimmt doch mal ab" ;
         
         if(tokens.length > 1){
             let name2 = tokens[1];
