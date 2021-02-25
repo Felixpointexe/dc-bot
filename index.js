@@ -239,11 +239,11 @@ async function gotMessage(message){
     if(tokens[0] === '/bastard'){
     {
   
-    message.channel.send({  "embed": {
-    "title": "Der Bastard-award",
-    "description": "findet, dass  ein Bastard ist. \n Was denkt dir darüber? Stimmt doch mal ab",
-    "color": 13632027,
-    "timestamp": "2021-02-25T12:22:15.923Z",
+       message.channel.send({  "embed": {
+       "title": "Der Bastard-award",
+       "description": "findet, dass  ein Bastard ist. \n Was denkt dir darüber? Stimmt doch mal ab",
+       "color": 13632027,
+       "timestamp": "2021-02-25T12:22:15.923Z",
      
 
     
@@ -254,10 +254,6 @@ async function gotMessage(message){
       "name": "author name",
       "url": "https://discordapp.com",
       "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png"
-    },
-    "fields": [
-      
-     ]
     }
     }});
         
