@@ -243,7 +243,7 @@ async function gotMessage(message){
   
        message.channel.send({embed: {
           "title": "Der Bastard-award",
-          "description": name, //"findet, dass  ein Bastard ist. \n Was denkt dir darüber? ${message.author.username} Stimmt doch mal ab",
+          "description": name + "findet, dass  ein Bastard ist. \n Was denkt dir darüber? Stimmt doch mal ab",
           "color": 13632027,
           "timestamp": "2021-02-25T12:22:15.923Z",
           "image": {
