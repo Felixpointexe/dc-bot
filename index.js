@@ -239,7 +239,7 @@ async function gotMessage(message){
     if(tokens[0] === '/bastard'){
     {
   
-    message.channel.send(  "embed": {
+    message.channel.send({  "embed": {
     "title": "Der Bastard-award",
     "description": "findet, dass  ein Bastard ist. \n Was denkt dir darüber? Stimmt doch mal ab",
     "color": 13632027,
@@ -259,7 +259,7 @@ async function gotMessage(message){
       
      ]
     }
-   });
+    }});
         
     }
     
