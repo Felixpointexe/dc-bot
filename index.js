@@ -46,6 +46,13 @@ async function gotMessage(message){
         message.reply('Max one trick');
 
     }
+    
+    
+    if(tokens[0] === '/code') {
+    
+        message.reply('you can see the code here: https://github.com/Felixpointexe/dc-bot');
+        
+    }
 
     
    
